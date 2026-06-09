@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c5u1dut5ebrio"]
+
+[node name="RaceTrach" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
