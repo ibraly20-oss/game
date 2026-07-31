@@ -1,19 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://dgvcv5kt4gy7p"]
+[gd_scene load_steps=4 format=3 uid="uid://dgvcv5kt4gy7p"]
 
-[ext_resource type="Texture2D" uid="uid://dsv5pkkyoctft" path="res://Car assets/f1 Frame 1.png" id="1_6sc2g"]
-[ext_resource type="Texture2D" uid="uid://c380iwtedqwky" path="res://Car assets/f1 frame 2.png" id="2_bkorf"]
+[ext_resource type="Texture2D" uid="uid://cos5jddoksube" path="res://Car assets/Pixelr F1 pizza.png" id="1_ubdti"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5t5k"]
-size = Vector2(43, 19)
+size = Vector2(23, 12)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ubdti"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_6sc2g")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_bkorf")
+"texture": ExtResource("1_ubdti")
 }],
 "loop": true,
 "name": &"default",
@@ -21,13 +17,15 @@ animations = [{
 }]
 
 [node name="playerCar" type="CharacterBody2D"]
+metadata/_edit_horizontal_guides_ = [-10.0]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 0.5)
+position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_u5t5k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, 1)
-scale = Vector2(0.0401879, 0.0401879)
+position = Vector2(0, -4.76837e-07)
+rotation = -1.57112
+scale = Vector2(0.129984, 0.129984)
 sprite_frames = SubResource("SpriteFrames_ubdti")
 autoplay = "default"
