@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5t5k"]
 size = Vector2(23, 12)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ubdti"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_6sc2g"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -29,5 +29,5 @@ shape = SubResource("RectangleShape2D_u5t5k")
 position = Vector2(0, -4.76837e-07)
 rotation = -1.57112
 scale = Vector2(0.129984, 0.129984)
-sprite_frames = SubResource("SpriteFrames_ubdti")
+sprite_frames = SubResource("SpriteFrames_6sc2g")
 autoplay = "default"

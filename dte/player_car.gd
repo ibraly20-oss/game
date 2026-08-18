@@ -1,10 +1,11 @@
 extends CharacterBody2D
 
 @export var engine_force : float = 300.0	
-@export var brake_force : float = 150.0
+@export var brake_force : float = 750.0
 @export var friction : float = 60.0
 @export var steer_speed : float = 150.0
-@export var max_speed : float = 350.0
+@export var max_speed : float = 950.0
+@export var drifting : float = 500.0
 
 var speed : float = 0.0
 
