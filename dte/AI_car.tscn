@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bo4h6cjqoit3"]
+[gd_scene load_steps=5 format=3 uid="uid://bo4h6cjqoit3"]
 
 [ext_resource type="Texture2D" uid="uid://bcsdic4cxrwt0" path="res://Car assets/AI Pixelr F1 pizza.png" id="1_2asr4"]
+[ext_resource type="Script" uid="uid://ygp4t5p4a5qp" path="res://ai_car.gd" id="1_avgb1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u5t5k"]
 size = Vector2(23, 12)
@@ -16,16 +17,19 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="AICar" type="CharacterBody2D"]
+[node name="Ai_Car" type="PathFollow2D"]
+script = ExtResource("1_avgb1")
+
+[node name="AI_Car_Physics" type="CharacterBody2D" parent="."]
 metadata/_edit_horizontal_guides_ = [-10.0]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AI_Car_Physics"]
 position = Vector2(0.5, 0)
 shape = SubResource("RectangleShape2D_u5t5k")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -4.76837e-07)
-rotation = -1.57112
-scale = Vector2(0.129984, 0.129984)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="AI_Car_Physics"]
+position = Vector2(0.918243, 0.245262)
+rotation = 1.5708
+scale = Vector2(0.135374, 0.129054)
 sprite_frames = SubResource("SpriteFrames_2asr4")
 autoplay = "default"
